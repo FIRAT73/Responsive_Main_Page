@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #87AD66;
+    color: #fff;
+    position: relative;
+}
+.navbar .nav-links{
+    margin-right:auto;
+}
+.navbar .nav-links a{
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.navbar .nav-links a:hover{
+    cursor: pointer;
+    border-bottom: 3px solid #b47c6a;
+
+}
+.navbar .logo{
+    object-fit: cover;
+    margin: 0 .5rem 0 3rem;
+    position: relative;
+}
+.navbar .menu{
+    display: flex;
+    gap: 3rem;
+}
+
+.navbar .menu #search{
+    position: relative;
+    padding: 10px;
+    width: 20rem;
+    box-sizing: border-box;
+    height: 28px;
+    border-radius: 5px;
+    border: none;     
+}
+.navbar .nav-links .menu #search:focus{
+    outline: 0;
+    transition: .4s ease border-bottom;
+    border-left: 3px solid #b47c6a;
+}
+
+.navbar .login{
+    margin: 0 3rem 0 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .login a{
+    color: #fff;
+    letter-spacing: .1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .login a img{
+    margin-left: 5px;
+}
+.navbar .login:hover{
+    transition: .4s ease border-bottom;
+    border-bottom: 3px solid #b47c6a;
+}
+
+
+.container{
+    background-color: #87AD66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+.container .info{
+    color: #fff;
+    position: relative;
+    margin-left: 3rem;
+    display: inline-block;
+    align-items: center;
+    justify-content: center; 
+}
+.container .info h2{
+    position: relative;
+    font-size: 38px;
+    font-weight: 400;
+}
+.container .info h2 input{
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0 0 1.5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container #btn_info{
+    color: #fff;
+    background-color: #FAAC93;
+    width: 75%;
+}
+.container #btn_contact{
+    color: #fff;
+    background-color: #AD7E6F;
+    width: 75%;
+}
+.container .image img{
+    position: relative;
+    object-fit: fill;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: auto;
+    
+
+}
+
+
+/******************************************** USING MEDIA */
+@media screen and (max-width:600px){
+    .navbar{
+        padding-top: 25px;
+    }
+    .navbar .logo{
+        position: absolute;
+    }
+    .navbar .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .navbar .login{
+        margin-left: -50rem;
+    }
+    .container{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .info{
+        margin-top: 5rem;
+    }
+    .container .info h2{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .container .info h2 input{
+        font-size: 24px;
+    }
+    .container .image img{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:768px) {
+    .navbar .nav-links{
+        margin-right: 1rem;
+    }
+    .navbar .menu{
+        gap: 1rem;
+    }
+    .navbar .menu li a{
+        font-size: 12px;
+    }
+    .navbar .menu #search{
+        position: relative;
+        width: 9rem;
+    }
+    .navbar .login a{
+        position: relative;
+        font-size: 10px;
+    }    
+    .container{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .info{
+        margin-top: 5rem;
+    }
+    .container .info h2{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .container .info h2 input{
+        font-size: 24px;
+    }
+    .container .image img{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }        
+}
+@media screen and (max-width:912px){
+    .navbar .nav-links{
+        margin-right: 1rem;
+    }
+    .navbar .menu{
+        gap: 1rem;
+    }
+    .navbar .menu li a{
+        font-size: 14px;
+    }
+    .navbar .menu #search{
+        position: relative;
+        width: 14rem;
+    }
+    .navbar .login a{
+        position: relative;
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width:1024px){
+    .navbar .nav-links{
+        margin-right: 1rem;
+    }
+    .navbar .menu{
+        gap: 1rem;
+    }
+    .navbar .menu li a{
+        font-size: 12px;
+    }
+    .navbar .menu #search{
+        width: 11rem;
+    }
+}
